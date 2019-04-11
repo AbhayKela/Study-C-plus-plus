@@ -1,0 +1,13 @@
+This test file is created to verify the CompareFiles.cpp program functionality. 
+This program will compare both the test1.txt and test2.txt and output the different character if any.
+Following text is just for example and taken from internet. 
+
+"In the past, memory was extremely expensive, and computers did not have much of it. 
+Consequently, there were incentives to make use of every bit of memory available. 
+Consider the bool data type -- even though it only has two possible values (true and false), 
+which can be represented by a single bit, it takes up an entire byte of memory! 
+This is because variables need unique addresses, and memory can only be addressed in bytes. 
+The bool uses 1 bit and the other 7 go to waste.Using bitwise operators, it is possible 
+to write functions that allow us to compact 8 booleans into a single byte-sized variable, 
+enabling significant memory savings at the expense of more complex code. In the past, 
+this was a good trade-off. Today, at least for application programming, it is probably not."
