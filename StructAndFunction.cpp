@@ -20,7 +20,7 @@ int main()
 {
     system("clear");
     Employee x = {"joe", "friends", 33 , "Male"};
-    Employee y = {"Sam", "Cummins", 44, "Male"};
+    Employee y = {"Sam", "xyz", 44, "Male"};
     printstruct(x);
     printstruct(y);
 
