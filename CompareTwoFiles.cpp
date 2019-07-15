@@ -21,7 +21,7 @@ int main()
            std::cout << "Files are equal" << std::endl;
        }
        else
-            std::cout << "Files are not of same size" << std::endl;
+            std::cout << "Files are not of equal. Atleast 1 byte is different on both files." << std::endl;
     }
     else 
         std::cout << "The file could not be opened properly" << std::endl;
@@ -62,10 +62,7 @@ bool areFilesEqual(std::fstream *a, std::fstream *b)
         return true;
     }
     else 
-    {   
-        std::cout << "Files are not equal" <<std::endl;
         return false;
-    }
 }
 int sizeofFile (std::fstream *file)
 {
