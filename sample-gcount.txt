@@ -1,0 +1,4 @@
+This function is GCOUNT and used to count character from the last operation.
+Abhay Kela
+Arnish Kela
+Priyanka Rathi 

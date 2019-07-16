@@ -18,10 +18,10 @@ int main()
        std::cout << "Both the files are open." <<std::endl;
        if (areFilesEqual(&file1, &file2))
        {
-           std::cout << "Files are equal" << std::endl;
+           std::cout << "Files are equal. " << std::endl;
        }
        else
-            std::cout << "Files are not of equal. Atleast 1 byte is different on both files." << std::endl;
+            std::cout << "Files are not equal." << std::endl;
     }
     else 
         std::cout << "The file could not be opened properly" << std::endl;
@@ -39,7 +39,7 @@ bool areFilesEqual(std::fstream *a, std::fstream *b)
         if (filesize1 > 1024)
             BUFFER_SIZE = 1024;
         else
-            BUFFER_SIZE = filesize1;
+            BUFFER_SIZE = filesize1; 
     
         char *file1buffer = new char[BUFFER_SIZE];
         char *file2buffer = new char[BUFFER_SIZE];
@@ -50,7 +50,7 @@ bool areFilesEqual(std::fstream *a, std::fstream *b)
 
             if(memcmp(file1buffer, file2buffer, BUFFER_SIZE) != 0)
             {
-                std::cout << "Files are equal" << std::endl;
+                std::cout << "Files are not equal,at least one of the byte was different" << std::endl;
                 delete [] file1buffer;
                 delete [] file2buffer;
                 return false; 
@@ -62,7 +62,10 @@ bool areFilesEqual(std::fstream *a, std::fstream *b)
         return true;
     }
     else 
+    {   
+        std::cout << "Size of files is not same" <<std::endl;
         return false;
+    }
 }
 int sizeofFile (std::fstream *file)
 {
